@@ -11,16 +11,31 @@
     <title>sketchPad</title>
 </head>
 <body>
-    <div id="container" class="container"></div>
-    <div class="buttons">
-        <button id="btnReset">Reset</button>
-        <button id="btnColor">Black</button>
-        <button id="btnRainbow">Rainbow</button>
+    <div class="mainContainer">
+
+        <div class="header">
+            <h1>Sketchpad</h1>
+        </div>
+
+        <div class="main">
+            <div id="container" class="container"></div>
+            <div class="buttons">
+                <button id="btnReset">Reset</button>
+                <button id="btnColor">Black</button>
+                <button id="btnRainbow">Rainbow</button>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
+            </div>
+            <div class="sliderValue">
+                <span id="sliderValue">16</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Copyright © 2021 Chickenbiscuitoo</p>
+        </div>
+
     </div>
-    <div></div>
-    <div class="slidecontainer">
-        <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
-    </div>
-    <span id="sliderValue">16</span>
 </body>
 </html>

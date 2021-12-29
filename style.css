@@ -10,6 +10,42 @@
 
 html, body{
     height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ededed;
+}
+
+.header {
+    background: #ededed;
+    flex: 10;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 85px;
+    color: #333;
+}
+
+.main {
+    background: #ededed;
+    justify-items: center;
+    flex: 94;
+    color: #333;
+}
+
+.footer {
+    background: #ededed;
+    color: #333;
+    flex: 1;
+    margin-bottom: 5px;
 }
 
 .container {
@@ -24,7 +60,36 @@ html, body{
     display: grid;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    border: 1px solid black;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #ededed;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #fefefe;
 }
 
 .gridItem {
@@ -43,7 +108,7 @@ html, body{
     appearance: none;
     width: 100%;
     height: 25px;
-    background: #d3d3d3;
+    background: #fefefe;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
@@ -67,6 +132,6 @@ html, body{
 .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
-    background: white;
+    background: #333;
     cursor: pointer;
 }
